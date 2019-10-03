@@ -1,0 +1,28 @@
+#map {
+    height: 450px;
+	width: 650px;
+	margin: auto;
+}
+.leaflet-right .leaflet-control {
+    margin-right: 10px;
+    color: #000;
+    background-color: azure;
+}
+.leaflet-right .leaflet-control i{
+    position:absolute;
+}
+.imgReino{
+  margin: 0 auto;
+    display: block;
+}
+@media screen and (max-width: 767px){
+
+}
+@media screen and (max-width: 414px) {
+	#map {
+	    height: 350px;
+			width: 100%;
+			margin: auto;
+	}
+
+}

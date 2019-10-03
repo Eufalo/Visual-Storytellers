@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Visualización</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/dc.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin="" />
+    <link rel="stylesheet" type="text/css" href="./js/Mapa/mapaEstilo.css">
+
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div id='intro'>
+                <div class="white-wrapper">
+                    <div class="intro-section">
+                        <div class="opening-title">
+                            <p class="small">La</p>
+                            <p class="big">Visualización</p>
+                            <p class="small">de las comunicaciones </p>
+                            <p class="big">aéreas</p>
+                        </div>
+                        <div class="byline">
+                            <div class="byline-item-date">
+                                <p class="light">Enero 2019</p>
+                            </div>
+                            <div class="byline-item">
+                                <p class="light">Autores</p>
+                                <p class="name">Alejandro Abad <br> Carlos Castro <br>Adrián Gallego </p>
+
+                            </div>
+                        </div>
+                        
+                            <image src="images/portada-01.png" class"center" width=850 />
+                        <div class="prose-wrapper">
+
+
+                            <p><span class="drop-cap">E </span>l <strong>"Visual Storytelling" </strong> es un término relativamente nuevo que describe la nueva práctica de las personas de la vida cotidiana que usan herramientas <strong>digitales</strong> para contar su <strong>"historia"</strong>. Las historias digitales a menudo se presentan en formatos atractivos y pueden ser <strong>interactivas</strong>.
+                                El término "Visual Storytelling" también puede abarcar una variedad de <strong>narraciones</strong> digitales (historias basadas en la web, historias interactivas, hipertextos y juegos de computadora narrativos); A veces se usa para referirse a la realización de películas en general, y en los últimos tiempos, se ha utilizado para describir los esfuerzos de publicidad y promoción de empresas comerciales y sin fines de lucro.
+                                Se puede definir la <strong>narración digital</strong> como el proceso mediante el cual diversas personas comparten sus historias de vida e imaginaciones creativas con otros. Esta nueva forma de narración surgió con la llegada de técnicas de producción de medios, hardware y software accesibles, que incluyen, entre otros, cámaras digitales, grabadoras de voz digitales.
+                                Se puede pensar en la narración digital como la extensión moderna del antiguo<strong> arte</strong> de la narración, ahora entretejido con imágenes fijas y en movimiento digitalizadas y con sonido. Gracias a los nuevos medios y las tecnologías digitales, las personas pueden abordar la narración de historias desde perspectivas únicas. Muchas personas utilizan formas de cuentos elaborados no tradicionales, como narraciones no lineales e interactivas.
+                                Las historias digitales se pueden usar como un medio expresivo dentro del aula para integrar la materia con los conocimientos y habilidades existentes en todas las asignaturas. Los estudiantes pueden trabajar individualmente o en colaboración para producir sus propias historias digitales. Una vez completadas, estas historias se pueden cargar fácilmente en Internet y se pueden poner a disposición de una audiencia internacional, según el tema y el propósito del proyecto.</p>
+
+                            <div class="divider"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="start" id='graphic'>
+                <div align="center" class="chapter">La aviación</div>
+                <section class="step" STYLE="background:white; border:0">
+                    <p>La historia de la aviación se remonta al día en el que el hombre prehistórico se paró a observar el vuelo de las aves y de otros animales voladores. El deseo de volar está presente en la humanidad desde hace siglos, y a lo largo de la historia del ser humano hay constancia de intentos de volar que han acabado mal. Algunos intentaron volar imitando a los pájaros, usando un par de alas elaboradas con un esqueleto de madera y plumas, que colocaban en los brazos y las balanceaban sin llegar a lograr el resultado esperado.</p>
+                </section>
+                <section class="step">
+                    <div class="title">Leonardo da Vinci</div>
+
+                    <p>El artista e inventor italiano se dedicó seriamente a desarrollar una máquina capaz de volar. Leonardo diseñó planeadores y ornitópteros, que usaban mecanismos similares a los pájaros para poder volar. Nunca llegó a construir tales máquinas, pero sus diseños se conservaron y se consideran como los primeros esbozos de una aeronaves.</p>
+                </section>
+                <div align="center" id='vis1'></div>
+                <section class="step">
+                    <div class="title">Primer vuelo comercial</div>
+                    <p>
+                        El 7 de noviembre de 1910, se realizo el primer vuelo comercial del mundo. Este vuelo, unio Dayton y Columbus (Ohio), duró una hora y dos minutos, recorriendo 100 kilómetros y rompiendo un nuevo récord de velocidad, alcanzando los 97 km/h.
+
+                    </p>
+                    <div id="mapPrimerVuelo" style="width: 800px; height: 300px;"></div>
+
+                </section>
+                <div align="center" id='vis2'></div>
+                <section class="step">
+                    <div class="title">Aeropuertos por Paises</div>
+                    <p>La evolución que han sufrido los medios de transporte aéreos en más de un siglo, supone que ha dia de hoy dispongamos de esta serie de aeropuertos repartidos por el mundo:</p>
+                    <div id="mapAeropuerto" style="width: 800px; height: 500px;"></div>
+                </section>
+                <div align="center" id='vis3'></div>
+                <section class="step">
+                    <div class="title">Aerolineas por Paises</div>
+                    <p>Dicha evolucion no hubiera sido posible sin las aerolineas, aqui disponemos de una distribución de aerolineas repartidas por el globo:</p>
+                    <div id="mapAerolineas" style="width: 800px; height: 500px;"></div>
+                </section>
+
+
+
+                <div class="row" id='dashboard' style='margin-right: 0; margin-left: 0;'>
+                    <div class='row' id='infoInst' style='margin-right: 0; margin-left: 0; padding-right: 10px; padding-left: 10px; padding-top: 10px; border-top: 6px solid #309191; border-bottom: 2px solid #309191; background-color: rgba(204,204,204,0.3)'>
+                        <div class="title">Dashboard </div>
+                    <p>Selecciona un pais para poder visualizar los aeropuertos, aerolineas y ruta de dicho pais.</p>
+                        <div id="mapAeropuertoDash" style="width: 800px; height: 500px;"></div>
+                        <div class="col-sm-6" style='padding-top: 10px; padding-right: 10px; padding-left: 10px;' align="center">
+                            <div class="col-sm-6" style='padding-top: 10px; padding-right: 10px; padding-left: 10px;' align="center">
+                                <div id="tituloAeropuerto"></div>
+                            </div>
+                            <div class="col-sm-6" style='padding-top: 10px; padding-right: 10px; padding-left: 10px;' align="center">
+                                <span id='criPieAeropuerto'></span>
+                            </div>
+                            <table class='table' id="dc-table-aeropuertos">
+                                <thead>
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th>Ciudad</th>
+                                        <th>IATA</th>
+                                        <th>ICAO</th>
+                                    </tr>
+                                </thead>
+                            </table>
+
+                            <div id="paging">
+                                Mostrando <span id="begin"></span>-<span id="end"></span> de <span id="size"></span>
+                                <button class="btn" id="last">Anterior</button>
+                                <button class="btn" id="next">Siguiente</button>
+                            </div>
+                        </div>
+                        <div class="col-sm-6" style='padding-top: 10px; padding-right: 10px; padding-left: 10px;' align="center">
+                            <div class="col-sm-6" style='padding-top: 10px; padding-right: 10px; padding-left: 10px;' align="center">
+                                <div id="tituloAerolineas"></div>
+                            </div>
+                            <div class="col-sm-6" style='padding-top: 10px; padding-right: 10px; padding-left: 10px;' align="center">
+                                <span id='criPieAerolineas'></span>
+                            </div>
+                            <table class='table' id="dc-table-aerolineas">
+                                <thead>
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th>Activo</th>
+                                        <th>IATA</th>
+                                        <th>ICAO</th>
+                                    </tr>
+                                </thead>
+                            </table>
+
+                            <div id="paging">
+                                Mostrando <span id="beginAerolinea"></span>-<span id="endAerolinea"></span> de <span id="sizeAerolinea"></span>
+                                <button class="btn" id="lastAerolinea">Anterior</button>
+                                <button class="btn" id="nextAerolinea">Siguiente</button>
+                            </div>
+                        </div>
+                        <div>
+                        <div id="titulomapaSalida"></div>
+                        <div id="mapSalidallegadas"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <script src="lib/d3.js"></script>
+                <script src="lib/d3-selection-multi.v1.min.js"></script>
+                <script src="lib/crossfilter.js"></script>
+                <script src="lib/dc.js"></script>
+                <script src="lib/fileSaver.min.js"></script>
+                <script src="lib/scroller.js"></script>
+                <script src="js/sections.js"></script>
+                <script src="lib/leaflet.bezier.js"></script>
+
+</body>
+
+</html>
